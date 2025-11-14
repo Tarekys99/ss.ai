@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض تأثيرات Hover - SS.AI</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="css/hover-effects.css" rel="stylesheet">
+    <link href="css/hover-animations-extra.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px 0;
+            background: #f5f5f5;
+        }
+
+        .demo-section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .demo-title {
+            color: #17bed2;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .demo-item {
+            margin: 20px 0;
+        }
+
+        .service,
+        .pricing,
+        .work {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 15px;
+        }
+
+        .service img,
+        .pricing img,
+        .work img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .btn-theme {
+            background: #17bed2;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .work-overlay {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 15px;
+        }
+
+        .icon-demo {
+            font-size: 48px;
+            color: #17bed2;
+            margin: 20px;
+        }
+
+        .link {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .badge {
+            background: #17bed2;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        blockquote {
+            border-left: 4px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #17bed2;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="text-align: center; color: #17bed2; margin-bottom: 50px;">
+            عرض تأثيرات Hover المتقدمة - SS.AI
+        </h1>
+
+        <!-- Button Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">1. تأثيرات الأزرار (Button Hover)</h2>
+            <div class="demo-item">
+                <button class="btn-theme">زر مع تأثير Ripple</button>
+                <button class="btn-theme">زر مع تأثير Shine</button>
+                <button class="btn-theme">زر مع رفع وتكبير</button>
+            </div>
+        </div>
+
+        <!-- Card Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">2. تأثيرات البطاقات (Card Hover)</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-rocket icon-demo"></i>
+                        <h3>خدمة 1</h3>
+                        <p>مرر الماوس لرؤية التأثير</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing">
+                        <i class="fa fa-star icon-demo"></i>
+                        <h3>خدمة 2</h3>
+                        <p>تأثير رفع مع ظلال</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work">
+                        <i class="fa fa-heart icon-demo"></i>
+                        <h3>خدمة 3</h3>
+                        <p>تأثير توهج عند التمرير</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">3. تأثيرات الصور (Image Hover)</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work-overlay">
+                        <img src="https://via.placeholder.com/400x300/17bed2/ffffff?text=Image+1" alt="Demo">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-overlay">
+                        <img src="https://via.placeholder.com/400x300/1a8a9a/ffffff?text=Image+2" alt="Demo">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-overlay">
+                        <img src="https://via.placeholder.com/400x300/17bed2/ffffff?text=Image+3" alt="Demo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">4. تأثيرات الروابط (Link Hover)</h2>
+            <div class="demo-item">
+                <a href="#" class="link">رابط مع خط تحتي متحرك</a>
+                <a href="#" class="link">رابط آخر مع تأثير</a>
+                <a href="#" class="link">رابط ثالث</a>
+            </div>
+        </div>
+
+        <!-- Icon Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">5. تأثيرات الأيقونات (Icon Hover)</h2>
+            <div class="demo-item" style="text-align: center;">
+                <i class="fa fa-facebook icon-demo"></i>
+                <i class="fa fa-twitter icon-demo"></i>
+                <i class="fa fa-linkedin icon-demo"></i>
+                <i class="fa fa-instagram icon-demo"></i>
+                <i class="fa fa-github icon-demo"></i>
+            </div>
+        </div>
+
+        <!-- Form Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">6. تأثيرات النماذج (Form Hover)</h2>
+            <div class="demo-item">
+                <input type="text" class="form-control" placeholder="اسمك">
+                <input type="email" class="form-control" placeholder="بريدك الإلكتروني">
+                <textarea class="form-control" rows="4" placeholder="رسالتك"></textarea>
+                <button class="btn-theme">إرسال</button>
+            </div>
+        </div>
+
+        <!-- List Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">7. تأثيرات القوائم (List Hover)</h2>
+            <ul class="contact-list">
+                <li><i class="fa fa-phone"></i> +966 123 456 789</li>
+                <li><i class="fa fa-envelope"></i> info@ss-ai.com</li>
+                <li><i class="fa fa-map-marker"></i> الرياض، المملكة العربية السعودية</li>
+                <li><i class="fa fa-globe"></i> www.ss-ai.com</li>
+            </ul>
+        </div>
+
+        <!-- Badge Hover Effects -->
+        <div class="demo-section">
+            <h2 class="demo-title">8. تأثيرات الشارات (Badge Hover)</h2>
+            <div class="demo-item">
+                <span class="badge">AI</span>
+                <span class="badge">Machine Learning</span>
+                <span class="badge">Cloud Computing</span>
+                <span class="badge">Data Analytics</span>
+                <span class="badge">Software Development</span>
+            </div>
+        </div>
+
+        <!-- Blockquote Hover -->
+        <div class="demo-section">
+            <h2 class="demo-title">9. تأثير الاقتباسات (Blockquote Hover)</h2>
+            <blockquote>
+                "الذكاء الاصطناعي هو المستقبل، ونحن نبنيه اليوم."
+                <footer>- SS.AI Team</footer>
+            </blockquote>
+        </div>
+
+        <!-- Special Animations -->
+        <div class="demo-section">
+            <h2 class="demo-title">10. تأثيرات خاصة (Special Animations)</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service float-animation">
+                        <i class="fa fa-rocket icon-demo"></i>
+                        <h4>Floating Animation</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service pulse-glow">
+                        <i class="fa fa-star icon-demo"></i>
+                        <h4>Pulse Glow</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service shake-animation">
+                        <i class="fa fa-bell icon-demo"></i>
+                        <h4>Shake Animation</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="demo-section" style="background: #17bed2; color: white;">
+            <h2 style="color: white;">تعليمات الاستخدام</h2>
+            <ul style="font-size: 16px; line-height: 2;">
+                <li>مرر الماوس فوق أي عنصر لرؤية التأثير</li>
+                <li>انقر على الأزرار لرؤية تأثير Ripple</li>
+                <li>جرب التمرير لرؤية تأثيرات Scroll Reveal</li>
+                <li>جميع التأثيرات محسّنة للأداء</li>
+                <li>متوافقة مع جميع المتصفحات الحديثة</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/hover-animations.js"></script>
+
+</body>
+
+</html>

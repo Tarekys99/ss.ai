@@ -1,0 +1,324 @@
+/* ========================================
+   DARK MODE STYLES
+   ======================================== */
+
+/* Dark Mode Variables */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #fafafa;
+    --bg-tertiary: #f3f4f5;
+    --text-primary: #515769;
+    --text-secondary: #a6a7aa;
+    --text-tertiary: #81848f;
+    --border-color: #edf0f2;
+    --card-bg: #ffffff;
+    --header-bg: rgba(255, 255, 255, 0.98);
+    --footer-bg: #ffffff;
+}
+
+/* Dark Mode Active */
+body.dark-mode {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #3a3a3a;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --text-tertiary: #909090;
+    --border-color: #404040;
+    --card-bg: #2d2d2d;
+    --header-bg: rgba(26, 26, 26, 0.98);
+    --footer-bg: #1a1a1a;
+}
+
+/* Apply Dark Mode */
+body.dark-mode {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Text Colors */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode a {
+    color: var(--text-secondary);
+}
+
+body.dark-mode a:hover {
+    color: #17bed2;
+}
+
+/* Header */
+body.dark-mode .header .navbar {
+    background: var(--header-bg);
+    border-bottom-color: var(--border-color);
+}
+
+body.dark-mode .header .navbar-toggle .toggle-icon,
+body.dark-mode .header .navbar-toggle .toggle-icon:before,
+body.dark-mode .header .navbar-toggle .toggle-icon:after {
+    background: var(--text-primary);
+}
+
+/* Backgrounds */
+body.dark-mode .bg-color-white {
+    background: var(--bg-primary) !important;
+}
+
+body.dark-mode .bg-color-sky-light {
+    background: var(--bg-secondary) !important;
+}
+
+/* Cards & Services */
+body.dark-mode .service {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .service.bg-color-base {
+    background: #17bed2 !important;
+}
+
+body.dark-mode .pricing {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+/* Accordion */
+body.dark-mode .accordion .panel-default>.panel-heading {
+    background: var(--card-bg);
+    color: var(--text-primary);
+}
+
+body.dark-mode .accordion .panel-body {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+/* Forms */
+body.dark-mode .form-control {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .form-control:focus {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+body.dark-mode .form-control::placeholder {
+    color: var(--text-tertiary);
+}
+
+/* Footer */
+body.dark-mode .footer {
+    background: var(--footer-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+body.dark-mode .footer-list-item a {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .footer-list-item a:hover {
+    color: #17bed2;
+}
+
+/* Section Separator */
+body.dark-mode .section-seperator {
+    border-bottom-color: var(--border-color);
+}
+
+/* Buttons */
+body.dark-mode .btn-white-bg {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+body.dark-mode .btn-white-bg:hover {
+    background: #17bed2;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-default-bg {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+body.dark-mode .btn-default-bg:hover {
+    background: #17bed2;
+    color: #ffffff;
+}
+
+/* Carousel */
+body.dark-mode .carousel-indicators li {
+    border-color: var(--text-primary);
+}
+
+/* Work/Portfolio */
+body.dark-mode .work-popup-content {
+    background: var(--card-bg);
+    color: var(--text-primary);
+}
+
+body.dark-mode .work-popup-content-divider {
+    border-right-color: var(--border-color);
+}
+
+/* Contact List */
+body.dark-mode .contact-list>li {
+    color: var(--text-secondary);
+}
+
+/* Back to Top */
+body.dark-mode .back-to-top {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+body.dark-mode .back-to-top:hover {
+    background: #17bed2;
+    color: #ffffff;
+}
+
+/* Masonry Grid */
+body.dark-mode .masonry-grid-item {
+    color: var(--text-primary);
+}
+
+/* Swiper Clients */
+body.dark-mode .swiper-clients-img {
+    opacity: 0.8;
+    filter: brightness(0.9);
+}
+
+body.dark-mode .swiper-clients-img:hover {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+/* Lead Text */
+body.dark-mode .lead {
+    color: var(--text-secondary);
+}
+
+/* Icons */
+body.dark-mode .color-base {
+    color: #17bed2 !important;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.dark-mode-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.dark-mode-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    transition: 0.4s;
+    border-radius: 34px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode-slider:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:checked+.dark-mode-slider {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
+}
+
+input:checked+.dark-mode-slider:before {
+    transform: translateX(24px);
+}
+
+/* Dark Mode Icons */
+.dark-mode-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    transition: 0.3s;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.dark-mode-icon.sun {
+    left: 7px;
+    color: #FFD700;
+    opacity: 1;
+}
+
+.dark-mode-icon.moon {
+    right: 7px;
+    color: #FFF;
+    opacity: 0.5;
+}
+
+input:checked+.dark-mode-slider .sun {
+    opacity: 0.5;
+}
+
+input:checked+.dark-mode-slider .moon {
+    opacity: 1;
+    color: #60A5FA;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .dark-mode-toggle {
+        margin: 10px 15px;
+    }
+}
+
+/* Smooth Transitions */
+body,
+.header .navbar,
+.service,
+.pricing,
+.form-control,
+.footer,
+.btn-white-bg,
+.btn-default-bg,
+.back-to-top {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

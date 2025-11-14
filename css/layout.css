@@ -653,7 +653,7 @@ h4 {
   font-size: 13px;
   font-weight: 600;
   font-family: Hind, sans-serif;
-  color: #fff;
+  color: #dc3545 !important;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -663,6 +663,7 @@ h4 {
 }
 .header .nav-item-child:hover, .header .nav-item-child:focus {
   background: transparent;
+  color: #c82333 !important;
 }
 .header .nav-item-hover {
   position: relative;
@@ -725,7 +726,7 @@ h4 {
   }
   /* Navbar Nav */
   .header .nav-item-child {
-    color: #515769;
+    color: #dc3545 !important;
     line-height: 1.4;
     padding: 12px 12px 12px 15px;
   }
@@ -786,7 +787,7 @@ h4 {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #515769;
+    color: #dc3545 !important;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
